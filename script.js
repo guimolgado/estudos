@@ -155,19 +155,48 @@ const pessoas = ["Gui", "Brenin", "Marcelin", "Ryanzin", "Aninha"]
 
 console.log(pessoas.includes("Brenin")); 
 
-const testepad = "2"; 
+const frase = "ola sou gui"
 
-const novoCompad = testepad.padStart(5, "3");
+const arrayDeFrase = frase.split(" ") 
 
-const otoCompad = testepad.padEnd(7, "2")
+console.log(arrayDeFrase);
 
-const utilCompad = novoCompad.padEnd(8, "9")
+const itemsDeCompra = ["tecido", "roupa", "agulha"]
 
-console.log(testepad);
+const itemsDaCompra = itemsDeCompra.join(",")
 
-console.log(novoCompad);
+console.log(itemsDaCompra);
 
-console.log(otoCompad);
+const palavra = "palavrinha viu bb "
 
-console.log(utilCompad);
+console.log(palavra.repeat(5));
 
+const somaEnorme = (...args) => {
+
+   let total = 0
+
+   for (let i = 0; i < args.length; i++) {
+      
+      total += args[i]
+
+   }
+
+     return total;
+
+}
+
+console.log(somaEnorme(1, 2, 3, 654363, 325555555555));
+
+const otraSomaEnorme = (...args) => {
+
+   let total = 0
+
+   for(num of args) {
+      total += num
+   }
+
+   return total;
+
+}
+
+console.log(otraSomaEnorme(1, 41341, 4135235255555555555));
