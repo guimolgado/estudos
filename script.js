@@ -199,4 +199,41 @@ const otraSomaEnorme = (...args) => {
 
 }
 
-console.log(otraSomaEnorme(1, 41341, 4135235255555555555));
+console.log(otraSomaEnorme(1, 41341, 4135235255555555555)); 
+
+const meusDetalhes = {
+   nome: "Gui",
+   idade: 21,
+   prof: "nenhuma"
+
+}
+
+const {nome, idade, prof} = meusDetalhes
+
+console.log(nome, idade, prof)
+
+const {nome: Primeironome} = meusDetalhes
+
+console.log(Primeironome);
+
+const comidas = ["Nhoque", "Strogonó", "Bobó"]
+
+const [comida1, comida2, comida3] = comidas
+
+console.log(comida1, comida2, comida3);
+
+//JSON
+
+const meuJson = '{"nome": "Gui", "idade": 21, "habilidades": ["nenhuma", "nenhuma2"]}'
+
+const meuObjeto = JSON.parse(meuJson);
+
+console.log(meuObjeto);
+
+console.log(meuObjeto.nome);
+
+const meuOtroObjeto = JSON.stringify(meuObjeto)
+
+console.log(meuOtroObjeto);
+
+console.log(typeof meuOtroObjeto);
