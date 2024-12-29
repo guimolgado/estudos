@@ -7,3 +7,60 @@
     flex-direction: column;
     background-color: aqua;
 }
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;        
+}
+
+.box{
+    height: 43px;
+    width: 33%;
+    border: 3px solid red;
+}
+
+
+ .center{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+   
+}
+
+.center .box{
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.space-around{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-around;
+   
+}
+
+.space-around .box{
+    width: 50px;
+}
+
+.space-between{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+   
+}
+
+.space-between .box{
+    width: 50px;
+}
+
+.end{
+    display: flex;
+    justify-content: end;
+   
+}
+
+.end .box{
+    width: 50px;
+}
