@@ -64,3 +64,37 @@
 .end .box{
     width: 50px;
 }
+
+.center, 
+.align-center,
+.flex-end,
+.stretch{
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: solid 1px blue;
+}
+
+.align-center .box,
+.flex-end, .box,
+.space-between, .box,
+.stretch, .box{
+width: 50px;
+}
+
+.align-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-end{
+    align-items: flex-end;
+}
+
+.stretch{
+    align-items: stretch;
+}
+
+.stretch, .box{
+    height: auto;
+}
