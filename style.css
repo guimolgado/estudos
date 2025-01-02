@@ -1,100 +1,15 @@
-.flex{
+.order{
     display: flex;
 }
 
-.flex-direction{
-    display: flex;
-    flex-direction: column;
-    background-color: aqua;
+#one{
+    order: 1;
 }
 
-.wrap{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;        
+#two{
+    order: 2;
 }
 
-.box{
-    height: 43px;
-    width: 33%;
-    border: 3px solid red;
-}
-
-
- .center{
-    display: flex;
-    margin-bottom: 20px;
-    justify-content: center;
-   
-}
-
-.center .box{
-    width: 50px;
-    margin-bottom: 20px;
-}
-
-.space-around{
-    display: flex;
-    margin-bottom: 20px;
-    justify-content: space-around;
-   
-}
-
-.space-around .box{
-    width: 50px;
-}
-
-.space-between{
-    display: flex;
-    margin-bottom: 20px;
-    justify-content: space-between;
-   
-}
-
-.space-between .box{
-    width: 50px;
-}
-
-.end{
-    display: flex;
-    justify-content: end;
-   
-}
-
-.end .box{
-    width: 50px;
-}
-
-.center, 
-.align-center,
-.flex-end,
-.stretch{
-    display: flex;
-    margin-bottom: 20px;
-    height: 200px;
-    border: solid 1px blue;
-}
-
-.align-center .box,
-.flex-end, .box,
-.space-between, .box,
-.stretch, .box{
-width: 50px;
-}
-
-.align-center {
-    align-items: center;
-    justify-content: center;
-}
-
-.flex-end{
-    align-items: flex-end;
-}
-
-.stretch{
-    align-items: stretch;
-}
-
-.stretch, .box{
-    height: auto;
+#three{
+    order: 3;
 }
