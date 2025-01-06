@@ -13,3 +13,83 @@
 #three{
     order: 3;
 }
+
+.grow {
+    display: flex;
+    gap: 14px; /* Adiciona espaçamento entre os retângulos */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.boxBig {
+    flex: 10; /* Faz este retângulo crescer em relação aos outros */
+    background-color: blue;
+}
+
+.basis{
+    display: flex;
+}
+
+.basis .box{
+    flex-basis: 20px;
+}
+
+.basis .boxBig{
+    flex-grow: 2px;
+
+}
+
+.shrink{
+    display: flex;
+}
+
+.shrink .boxBig{
+    flex-grow: 2;
+    flex-shrink: 5;
+    flex-basis: 250px ;
+    width: auto;
+
+}
+
+.shrink .boxBig{
+    flex-shrink: 5;
+
+}
+
+.shorthand{
+    display: flex;
+}
+
+.shorthand .box{
+    width: auto;
+    flex: 1 1 50px
+}
+
+.shorthand .boxBig{
+    flex: 3 1 400px;
+}
+
+.auto-aligment {
+    height: 300px;
+    display: flex;
+    align-items: flex-end; /* Alinha os itens no final */
+    border: 1px solid green;
+    gap: 10px; /* Adiciona espaçamento entre os elementos */
+}
+
+.auto-aligment .box {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+.auto-aligment .boxBig {
+    width: 100px; /* Define largura fixa para testar visibilidade */
+    height: 150px; /* Define altura maior para diferenciá-la */
+    background-color: blue;
+    align-self: center; /* Sobrescreve o alinhamento do contêiner */
+}
